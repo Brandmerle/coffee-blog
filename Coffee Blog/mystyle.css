@@ -1,7 +1,7 @@
 /*global*/
 html,body{
-    margin:0;
-    padding:0;
+    margin:10px;
+    padding:10px;
 }
 body{
     font-family: arial;
@@ -30,6 +30,7 @@ p{
     text-decoration: none;
     letter-spacing: 2px;
     font-size: 12px;
+    border: none;
 }
 .btn-more{
     background-color: black;
@@ -48,6 +49,18 @@ p{
     justify-content: space-around;/*horizontally*/
     align-items: center;/*vertical*/
 }
+.menu-bar1{
+    display:flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;/*vertical*/
+    text-align: left;
+    margin: auto;
+    padding: 10px
+   
+    
+}
+
 .site-header{
     background-image: url(./img/banner.jpg);
     background-position: center center;
@@ -55,6 +68,13 @@ p{
     color:white;
     height: 350px;
     text-align: center;
+}
+.secondary-header{
+    background-color: black;
+    height: 100px;
+    color: white;
+
+    
 }
 .menu a{
     color:white;
@@ -81,10 +101,44 @@ p{
 .courses-container{
     width:40%;
 }
+
+.courses-container1{
+    width: 80% ;
+}
 /*blog*/
 
 /*footer*/ 
 .site-footer{
     background-color: black;
     color:white;
+}
+
+/*contact*/
+.contact-container{
+display: flex;
+flex-direction: column;
+
+}
+.contact-img{
+
+}
+.contact-form{
+background-color: white;
+padding: 20px;
+margin-top: -50px;
+}
+.input-control{
+margin-bottom: 20px;
+
+}
+.input-control label{
+  display: inline-block;
+  width: 120px;           
+}
+.input-control input,
+.input-control textarea{
+width: 60%;
+padding: 3px;
+
+border: 1px solid lightgray;
 }
